@@ -1,0 +1,680 @@
+/*/typefaces/*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+body{
+	margin: 0;
+	padding:0;
+	cursor: url("img/cursor.png"), pointer;
+	background-color: black;
+}
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+.logo{
+	position: absolute;
+	width: 150px;
+	height: auto;
+	top: 10px;
+	left: 10px;
+}
+.bg1{
+	position: absolute;
+	background-color: #ECF2F9;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	animation-name: fadein;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+	from{
+		transform: scale(0);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+/*home page*/
+
+#organization{
+	position: absolute;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 120px;
+	word-spacing: 30px;
+	color: black;
+	width: 600px;
+	height: 328px;
+	left: 100px;
+	top: 150px;
+	text-align: left;
+	z-index: 99;
+}
+#organization:hover{
+	transform: scale(1.3);
+}
+#quote{
+	position: absolute;
+	font-family: "Poppins", sans-serif;
+  font-size: 30px;
+	text-align: right;
+	color: #535252;
+	top: 600px;
+	right: 30px;
+	width: 430px;
+
+}
+#buttonofcalendar{
+	position: absolute;
+	font-size: 30px;
+	font-family: Poppins;
+	font-weight: 500;
+	color: black;
+	top: 30px;
+	right: 40px;
+}
+#buttonofcalendar:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out;
+}
+#buttonofcalendar:hover:after{
+	visibility: visible;
+  transform: scaleX(1);
+}
+#buttonofcontact{
+	position: absolute;
+	font-size: 30px;
+	font-family: Poppins;
+	font-weight: 500;
+	color: black;
+	top: 80px;
+	right:40px;
+	z-index: 99;
+}
+#buttonofcontact:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out;
+}
+#buttonofcontact:hover:after{
+	visibility: visible;
+	transform: scaleX(1);
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 500px;
+  position: absolute;
+	top: 200px;
+	left: calc(50% - 250px);
+  margin: auto;
+	opacity: 80%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+	font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*about page*/
+#about{
+	position: absolute;
+	color: black;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	top: 250px;
+	right: 500px;
+}
+#about:hover{
+	transform: scale(0.5);
+	color: #525252;
+}
+#aboutContent{
+	position: absolute;
+	font-family: "Poppins";
+	font-size: 14px;
+	width: 450px;
+	height: 450px;
+	top: 350px;
+	right: 150px;
+	z-index: 99;
+}
+.gallery{
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	top: 100px;
+	left: 50px;
+}
+#galleryimage1{
+	position: absolute;
+	width: 300px;
+	height: auto;
+	bottom: 0;
+	right: 30px;
+}
+#galleryimage2{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 70px;
+	left: 65px;
+}
+#galleryimage3{
+	position: absolute;
+	width: 380px;
+	height: auto;
+	left: 20px;
+	bottom: 0;
+}
+/* have the text shown when hover */
+#artist1{
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+	font-size:20px;
+	font-family: 'Poppins', sans-serif;
+}
+#artist1{
+	width:240px;
+	height:240px;
+	background:#fff;
+	opacity:0;
+}
+#galleryimage1:hover #artist1{
+	opacity:0.6;
+	color:#000000;
+	padding:30px;
+}
+#artist2{
+	width:230px;
+	height:130px;
+	position: absolute;
+	top: 70px;
+	left: 65px;
+	background:#fff;
+	opacity:0;
+}
+#galleryimage2:hover #artist2{
+	opacity:0.6;
+	color:#000000;
+	padding:30px;
+}
+#artist3{
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	width:320px;
+	height:195px;
+	background:#fff;
+	opacity:0;
+}
+#galleryimage3:hover #artist3{
+	opacity:0.6;
+	color:#000000;
+	padding:30px;
+}
+/* contact page */
+.framebg{
+	position: absolute;
+	top: 15%;
+	left: calc(50% - 500px);
+	width: 1000px;
+	height: 480px;
+}
+#contactinfo{
+	position: absolute;
+	width: 700px;
+	height: auto;
+	left: calc(50% - 350px);
+	top: 300px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	filter: blur(5px);
+}
+#contactinfo:hover{
+	font-weight: 500;
+	filter: blur(0);
+}
+.sm{
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+}
+.sm a{
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	font-size: 25px;
+	align-items: center;
+	text-decoration: none;
+	color: #8F292F ;
+	justify-content: center;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+.sm a:hover{
+	background: #8F292F;
+	color: white;
+}
+/* Event Home */
+#events{
+	position: absolute;
+	width: 100vw;
+	height: 260px;
+	background: url("img/image7.jpg");
+	background-size: cover;
+	top: 150px;
+	opacity: 60%;
+}
+.rec{
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	height: 260px;
+	top: 150px;
+
+}
+#title{
+	display: inline-block;
+	text-align: left;
+	padding-left: 30px;
+	width: 70vw;
+	font-size: 80px;
+	font-weight: 500;
+}
+#eventquote{
+	display: inline-block;
+	width: 50vw;
+	padding: 0 70px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 200;
+}
+.cardcontent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+}
+.card1{
+	position: absolute;
+	top: 450px;
+	left: 200px;
+	padding: 40px;
+	width: 400px;
+	height: 400px;
+}
+.card2{
+	position: absolute;
+	padding: 40px;
+	top: 450px;
+	right: 200px;
+	width: 400px;
+	height: 400px;
+}
+.card3{
+	position: absolute;
+	top: 900px;
+	left: 200px;
+	padding: 40px;
+	width: 400px;
+	height: 400px;
+}
+.card4{
+	position: absolute;
+	top: 900px;
+	padding: 40px;
+	right: 200px;
+	width: 400px;
+	height: 400px;
+}
+.front, .back{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background-color: #EDEFF3;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	backface-visibility: hidden;
+	text-align: center;
+	transition: transform 0.6s linear;
+}
+.front{
+	transform: perspective(600px) rotateY(0deg);
+}
+.back{
+	transform: perspective(600px) rotateY(180deg);
+}
+.card1:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card1:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+.card2:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card2:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+.card3:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card3:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+.card4:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card4:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+/* Events */
+.bg2{
+	position: absolute;
+	background-color: #1C1C1C ;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	animation-name: fadein;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+.screen{
+	position: absolute;
+	top: calc(50% - 330px);
+	left: 100px;
+	width: 1000px;
+	height: 660px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: white;
+	border-radius: 20px;
+
+}
+#shutterout{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border-radius: 90px;
+	border: 10px solid white;
+	top: calc(49% - 46px);
+	right: 95px;
+}
+#shutter{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background-color: white;
+	top: calc(50% - 39px);
+	right: 110px;
+}
+#return a{
+	position: absolute;
+	top: 80px;
+	right: 120px;
+	color: white;
+	font-size: 60px;
+}
+.photogallery{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	background-color: white;
+	bottom: 80px;
+	right: 100px;
+	border-radius: 20px;
+}
+.eventcontent{
+	position: absolute;
+	display: inline-block;
+}
+.eventcontent h2{
+	position: absolute;
+	width: 1000px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+}
+.eventcontent h3{
+	position: absolute;
+	top: 90px;
+	left: 100px;
+	width: 800px;
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #525252;
+}
+.eventcontent h4{
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	width: 800px;
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #525252;
+}
+.eventcontent ul{
+	position: absolute;
+	top: 180px;
+	margin-left: 90px;
+	margin-right: 100px;
+	width: 800px;
+	height: auto;
+	font-family: 'Poppins',sans-serif;
+	font-size: 20px;
+	align-items: center;
+}
+
+/* .photogallery */
+#back a{
+	position: absolute;
+	font-size: 60px;
+	color: white;
+	text-decoration: none;
+	top: 15px;
+	left: 20px;
+}
+#photogallerytitle{
+	position: absolute;
+	width: 100vw;
+	top: 15px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	color: white;
+}
+.gallerycontainer{
+	position: absolute;
+	width: 1100px;
+	height: auto;
+	top: 100px;
+	left: calc(50% - 520px);
+}
+.gallerycontainer img{
+	position: relative;
+	width: 300px;
+	height: auto;
+	padding: 30px;
+}
+/* animations */
+.screenshot{
+	animation-name: shoot;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	position: absolute;
+	width: 1000px;
+	height: 660px;
+	top: calc(50% - 330px);
+	left: 100px;
+	background-color: black;
+	opacity: 0;
+}
+@keyframes shoot {
+	0%{  background-color: white};
+	50%{ background-color: black};
+	100%{ background-color: white};
+}
+@media only screen and (max-width: 760px ) {
+	#organization{
+		left: 50px;
+	}
+	#quote{
+		top: 1000px;
+	}
+	.slideshow-container{
+		top: 500px;
+	}
+	#eventquote{
+		width: 80vw;
+		font-size: 18px;
+	}
+	.card1{
+		left: 60px;
+	}
+	.card2{
+		left: 60px;
+		top: 950px;
+	}
+	.card3{
+		left: 60px;
+		top: 1400px;
+	}
+	.card4{
+		left: 60px;
+		top: 1850px;
+	}
+	.framebg{
+  	width: 500px;
+		height: 450px;
+		left: calc(50% - 250px);
+	}
+	#contactinfo{
+		width: 300px;
+		left: calc(50% - 150px);
+		font-size: 16px;
+	}
+	.screen{
+		width: 500px;
+		left: calc(50% - 250px);
+	}
+	#shutter{
+		left: calc(50% - 40px);
+		top: 750px;
+	}
+	#shutterout{
+		left: calc(50% - 55px);
+		top: 736px;
+	}
+	#return a{
+		left: 100px;
+		top: 750px;
+	}
+	.photogallery{
+		width: 80px;
+		height: 80px;
+		top: 750px;
+		right: 90px;
+	}
+	.eventcontent h2{
+		font-size: 40px;
+		width: 500px;
+	}
+	.eventcontent h3{
+		font-size: 22px;
+		width: 400px;
+		left: 50px;
+	}
+	.eventcontent h4{
+		width: 400px;
+		top: 230px;
+		left: 50px;
+	}
+	.eventcontent ul{
+		width: 400px;
+		font-size: 15px;
+		margin-left: 30px;
+		margin-right: 30px;
+		top: 200px;
+	}
+	.gallerycontainer
+	{
+		width: 600px;
+		left: calc(50% - 300px);
+	}
+	.gallerycontainer img{
+		width: 250px;
+		padding: 15px;
+	}
+}
